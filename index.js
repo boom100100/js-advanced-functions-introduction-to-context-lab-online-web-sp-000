@@ -60,10 +60,9 @@ function allWagesFor(record){
 
 
 function calculatePayroll(employees){
-  //let payroll = 0;
-  //employees.forEach(x => {payroll = payroll + allWagesFor(x)});
   return employees.reduce((memo, rec) => memo + allWagesFor(rec), 0);
-  //return payroll;
+
+  
 }
 
 function findEmployeeByFirstName(allRecords, name){
